@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Home, Target, Trophy } from 'lucide-react-native';
+import { Home, Target, Trophy, Settings } from 'lucide-react-native';
 
 export default function TabLayout() {
   return (
@@ -52,6 +52,15 @@ export default function TabLayout() {
           title: 'Achievements',
           tabBarIcon: ({ color, size }) => (
             <Trophy size={size} color={color} strokeWidth={2} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: 'Settings',
+          tabBarIcon: ({ color, size }) => (
+            <Settings size={size} color={color} strokeWidth={2} />
           ),
         }}
       />
